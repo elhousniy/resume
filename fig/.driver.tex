@@ -1,0 +1,33 @@
+%-------------------------------------------------------------------------------
+% Filename:    .driver.tex
+% Description: This file converts "temp.pstex_t" into "driver.dvi"
+% Author:      Sylvain GUILLEY (sylvain.guilley@TELECOM-ParisTech.fr)
+% Note:        It can be accessed from anywhere in $ROOTDIR (use $ROOTDIR/.driver.tex)
+% Note:        This file is embedded neither into fig2eps nor into gnu2eps,
+%              because it is shared between those two scripts.
+%-------------------------------------------------------------------------------
+
+\documentclass{article}
+\usepackage[dvips]{graphicx} % Enables \reflectbox for mirrored text
+\usepackage[dvips,usenames]{color} % Usage: \textcolor{blue}{scan-chain}
+%\usepackage{stmaryrd} % \llbracket and \rrbracket
+\usepackage{mathrsfs} % For \mathscr{L}, the cursive version of L
+% The option [usenames] causes the definitions for the 68 colors known to dvips (such as BrickRed) to be preloaded.
+%\usepackage{rotating}
+\usepackage{epsfig}
+\usepackage{amsmath,amssymb}
+%\usepackage{stmaryrd} % Provides \llbracket and \rrbracket used for intervals of integers
+\definecolor{gris}{gray}{.730}% bbbbbb = .6875
+
+\begin{document}
+\pagestyle{empty}
+
+% PS figure:
+%\begin{picture}(0,0)%
+%\includegraphics{temp.pstex}%
+%\end{picture}%
+
+% LaTeX picture:
+\input{temp.pstex_t}
+
+\end{document}
