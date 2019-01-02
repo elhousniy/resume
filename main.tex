@@ -17,12 +17,12 @@
 
 % personal data
 \name{Youssef}{El Housni}
-%\title{Applied Mathematics Engineer}                               % optional, remove / comment the line if not wanted
-\address{8 Rue du Parc}{35510 Cesson-Sévigné}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\title{Cryptographer}                               % optional, remove / comment the line if not wanted
+\address{1 Rue de l'aigle}{92250 La Garenne-Colombes, France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+33~(0)~662968238}                   % optional, remove / comment the line if not wanted
 \email{youssef.housni21@gmail.com}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\extrainfo{born in Morocco the $23^{rd}$, February $1994$}                 % optional, remove / comment the line if not wanted
+\homepage{medium.com/@youssef.housni21}                         % optional, remove / comment the line if not wanted
+\extrainfo{\url{crypto.stackexchange.com/users/63311}}                         % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{./img/picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 \quote{
 	\begin{flushright}
@@ -48,37 +48,54 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\section{Experience}
+\cventry{08/2018--present}{R\&D Engineer}{EY Wavespace Lab}{Paris}{}{{}%
+Lead cryptographer in the Blockchain team.
+\begin{itemize}%
+	\item Zero-knowledge proofs (ZKP) for the Blockchain (ZK-SNARks, ZK-STARKS, Bulletproofs).
+	\item Secure multiparty computation (SMPC) for the Blockchain (Enigma, HAWK).	
+	\item Implementing proxy re-encryption and attribute-based encryption. 
+	\item Designing a pairing-friendly elliptic curve in Edwards form resistant to exTNFS (128-bit security).
+\end{itemize}}
+\
+\cventry{10/2016--08/2018}{R\&D Engineer}{Secure-IC}{Rennes}{}{{}%
+\begin{itemize}%
+	\item Elliptic curve cryptography: Theory, implementations and countermeasures against side-channel and fault injection attacks.
+	\item Pairing-based cryptography (id-based encryption, BLS signatures).
+	\item Post-quantum cryptography (Isogenies-based and code-based cryptography i.e. SIKE, DAGS) (\textit{submitted a paper with DAGS team, a NIST PQC candidate})
+	\item Mathematical modeling of a hardware TRNG (True Random Number Generator) (\textit{a patent pending and a published paper}) and a hardware PUF (Phylically Unclonable Function) (\textit{Contribution to appear in ISO 20807 part 2}). 
+	\item Video steganography (up to UHD@60fps 10-bit) on embedded devices (Hisilicon Hi2798CV200 set-top box).
+\end{itemize}}
+\cventry{03/2016--09/2016}{R\&D Intern}{Orange Labs}{Rennes}{}{Developed in C language a state-of-the-art speaker recognition system based on machine learning techniques (\textit{ranked second best internship})}
+\cventry{06/2015--09/2015}{R\&D Intern}{Kansai University}{Osaka, Japan}{}{Developed in Matlab an active noise control system for IRM machines under the supervision of professor Yoshinobu Kajikawa.}
+
 \section{Education}
-\cventry{2013--2016}{ENSEIRB-MATMECA School of engineering}{Bordeaux, France}{}{}{\begin{itemize} \item Master of science in Signal Processing and Applied Mathematics.\\ \item Bachelor of science in Electronics. \end{itemize}}
+\cventry{2013--2016}{ENSEIRB-MATMECA School of engineering}{Bordeaux, France}{}{}{Master of science in Signal Processing and Applied Mathematics.}
 \cventry{2011--2013}{Moulay Al-Hassan}{Tangier, Morocco}{}{}{Preparatory classes for the French national entrance exam for admission to the ‘Grandes Ecoles’ Science and Engineering schools.}
 
-\section{Experience}
-\cventry{10/2016--present}{R\&D Engineer}{Secure-IC}{Rennes}{}{{}%
-\begin{itemize}%
-	\item Elliptic curve cryptography: Theory and countermeasures.
-	\item Post-quantum cryptography (Isogenies-based and code-based cryptography i.e. SIKE, DAGS) (\textit{submitted a paper with DAGS team, a NIST PQC candidate})
-	\item Stochastic models of a hardware TRNG (True Random Number Generator) (\textit{a patent pending and two sumbitted papers}) and a hardware PUF (Phylically Unclonable Function) (\textit{Contribution to appear in ISO 20807 part 2}). 
-	\item Video steganography and steganalysis on embedded devices.
-\end{itemize}}
-\cventry{03/2016--09/2016}{R\&D Intern}{Orange Labs}{Rennes}{}{developed a state-of-the-art speaker recognition system based on machine learning techniques (\textit{ranked second best internship})}
-\cventry{06/2015--09/2015}{R\&D Intern}{Kansai University}{Osaka, Japan}{}{developed an active noise control system for IRM machines under the supervision of professor Yoshinobu Kajikawa.}
-
 \section{Computer skills}
-\cvitem{Programming and software}{C/C++, Python, Bash, Matlab, SageMath, \LaTeX .}
+\cvitem{Programming and software}{C, Python, Bash, SageMath, Matlab, \LaTeX .}
 \cvitem{Operating system}{Linux, MacOS, Windows.}
-\cvitem{Versioning}{svn, git.}
+
+\section{Languages}
+\cvitem{}{English (fluent), French/Arabic (bilingual), Spanish (intermediate).}
 
 \section{Patents}
-\cvitem{\textit{Patent pending}}{Embedded dynamic statistical tests for TRNGs (joint with Florent Lozac'h). Secure-IC S.A.S.}
+\cvitem{\textit{\begin{tabular}{ll}Patent\\ pending\\\\\end{tabular}}}{\begin{tabular}{ll}Device and method for testing a sequence generated by a random number generator \\ (joint with Florent Lozac'h) \\ Secure-IC S.A.S. \end{tabular}}
 
-\section{Submitted and working papers}
-\cvitem{\textit{accepted in FDTC 2018}}{Random numbers generation: Tests and attacks. (joint with Sylvain Guilley)}
-\cvitem{\textit{submitted to SSR 2018}}{Making randomness tests flexible. (joint with Sylvain Guilley)}
-\cvitem{\textit{submitted to the journal "Cryptography"}}{On the performance and security of $GF(2^N)$ computation for small $N$. (joint with Sylvain Guilley, Adrien Facon, Jean-Luc Danger, Edoardo Persichetti, Cheikh Thiecoumba Gueye, Ousmane Ndiyae, Sylvie Herbel, and Alexander Schaub)}
+\section{Research Papers}
+\cvitem{\textit{\begin{tabular}{ll}Published\\\\\\\\\end{tabular}}}{\begin{tabular}{ll}"On the performance and security of $GF(2^N)$ computation for small $N$" \\(joint with Sylvain Guilley, Edoardo Persichetti et al.) \\ Published in MDPI Cryptography 2018 Journal, Special Issue "Code-based Cryptography". \\ \url{DOI:10.3390/cryptography2030025} \end{tabular}}
+\cvitem{\textit{\begin{tabular}{ll}Published\\\\\\\\\end{tabular}}}{\begin{tabular}{ll}"Random numbers generation: Tests and attacks"\\ (joint with Sylvain Guilley) \\ Published in 2018 Workshop on Fault Diagnosis and Tolerance in Cryptography (FDTC) \\ \url{DOI:10.1109/FDTC.2018.00016} \end{tabular}}
+\cvitem{\textit{\begin{tabular}{ll}Pre-print\\\\\end{tabular}}}{\begin{tabular}{ll}"Making randomness tests flexible"\\ (joint with Sylvain Guilley) \end{tabular}}
+
+\section{HAL Research documents}
+\cvitem{\textit{\begin{tabular}{ll}2018\\\\\\\end{tabular}}}{\begin{tabular}{ll}"Introduction to the Mathematical Foundations of Elliptic Curve Cryptography" \\ HAL Id: hal-01914807 \\ \url{https://hal.archives-ouvertes.fr/hal-01914807} \end{tabular}}
+\cvitem{\textit{\begin{tabular}{ll}2018\\\\\\\end{tabular}}}{\begin{tabular}{ll}"Edwards Curves" \\HAL Id: hal-01942759 \\ \url{https://hal.archives-ouvertes.fr/hal-01942759} \end{tabular}}
 
 \section{Interests}
 \cvitem{Football}{Played in the moroccan regional championship with Tetouan local team from 2000 to 2011.}
-\cvitem{Mathematics}{Participated twice in the National Mathematical Olympiads.}
+\cvitem{Mathematics}{Finalist twice in the National Mathematical Olympiads.}
+\cvitem{Blogging}{Write Medium blogs about cryptography \url{https://medium.com/@youssef.housni21} and active on Cryptography StackExchange \url{https://crypto.stackexchange.com/users/63311/youssef-el-housni}}
 
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
